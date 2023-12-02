@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Admin Dashboard</title>
+   </head>
+   
+   <body>
+    
+    <input type="text" id="searchInput" placeholder="Search" />
+    <button class="btn DeleteSelected" type="button" onclick="deleteSelectedRows()"><i class="fa fa-trash"></i></button>
+    
+      <table id="DataTable">
+    
+        <thead>
+            <tr>
+               <th><input type="checkbox" id="selectAllCheckbox" onclick="selectAllRows(this)" /></th>
+               <th>Name</th>
+               <th>E-mail</th>
+               <th>Role</th>
+               <th>Action</th>
+            </tr>
+         </thead>
+    
+         <tbody>
+            <tr>
+               <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="pagination">
+      </div>
+      <p><span id="selectedRowCount">0</span> of  <span id="totalRowCount">46</span> row(s) Selected</p>
+      <script src="script.js"></script>
+   </body>
+</html>
